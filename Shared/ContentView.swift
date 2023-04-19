@@ -16,7 +16,7 @@ struct ContentView: View {
     
     var body: some View {
         chatListView
-            .navigationTitle("XCA ChatGPT")
+            .navigationTitle("Watch AI")
     }
     
     var chatListView: some View {
@@ -107,7 +107,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            ContentView(vm: ViewModel(api: ChatGPTAPI(apiKey: "PROVIDE_API_KEY")))
+            ContentView(vm: ViewModel(api: ChatGPTAPI(apiKey: "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")))
         }
     }
 }

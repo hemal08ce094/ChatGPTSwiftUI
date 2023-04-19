@@ -10,14 +10,14 @@ import SwiftUI
 @main
 struct XCAChatGPTTVApp: App {
     
-    @StateObject var vm = ViewModel(api: ChatGPTAPI(apiKey: "API_KEY"), enableSpeech: true)
+    @StateObject var vm = ViewModel(api: ChatGPTAPI(apiKey: "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"), enableSpeech: true)
     
     @FocusState var isTextFieldFocused: Bool
     
     var body: some Scene {
         WindowGroup {
             VStack {
-                Text("XCA ChatGPT").font(.largeTitle)
+                Text("Watch AI").font(.largeTitle)
                 HStack(alignment: .top) {
                     ContentView(vm: vm)
                         .cornerRadius(32)
